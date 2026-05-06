@@ -1,0 +1,42 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T06:17:03.922Z",
+  "summary": "The diff partially implements REQ-14. The browser tab title update in index.html is not evidenced in the diff. The sidebar shows 'IoT Based Smart Waste' and 'Management System' split across two lines, but the mobile header uses 'IoT Smart Waste Management' which contradicts the required exact title. The landing page and login page title updates are not directly evidenced in the diff.",
+  "missing_requirements": [
+    {
+      "id": "REQ-14",
+      "requirement": "Update the browser tab title in frontend/index.html to 'IoT Based Smart Waste Management System'.",
+      "reason": "No changes to frontend/index.html are present in the diff. The browser tab title update is not evidenced.",
+      "evidence": []
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "The mobile header/top-bar app name label must display 'IoT Based Smart Waste Management System' without contradicting the required value.",
+      "reason": "The DashboardLayout.tsx file-summary explicitly states the mobile header uses 'IoT Smart Waste Management', which contradicts the required exact title 'IoT Based Smart Waste Management System'.",
+      "evidence": [
+        "frontend/src/layouts/DashboardLayout.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "The landing page hero section title displays 'IoT Based Smart Waste Management System'.",
+      "reason": "No changes to LandingPage.tsx are shown in the diff. There is no diff evidence confirming the landing page title was updated as part of this change.",
+      "evidence": []
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "The login page header displays 'IoT Based Smart Waste Management System'.",
+      "reason": "No changes to LoginPage.tsx are present in the diff. There is no evidence the login page header was updated or verified.",
+      "evidence": []
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.78,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/layouts/DashboardLayout.tsx",
+    "project_state.json"
+  ]
+}

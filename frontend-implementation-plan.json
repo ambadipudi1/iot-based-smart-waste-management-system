@@ -1,0 +1,34 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update app title to IoT Based Smart Waste Management System",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Update the browser tab title and all visible app name labels to 'IoT Based Smart Waste Management System' throughout the application",
+      "acceptanceCriteria": [
+        "The browser tab (document title in index.html) reads exactly 'IoT Based Smart Waste Management System'.",
+        "The landing page hero section title displays 'IoT Based Smart Waste Management System'.",
+        "Any sidebar or top-bar app name label displays 'IoT Based Smart Waste Management System'.",
+        "No other page titles or app name references contradict this value."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the <title> element to 'IoT Based Smart Waste Management System' to ensure the browser tab displays the correct application name."
+        },
+        {
+          "path": "frontend/src/pages/LandingPage.tsx",
+          "operation": "modify",
+          "description": "Update the hero section heading to display 'IoT Based Smart Waste Management System' as the main title. Ensure the heading maintains its current styling and parallax scroll animation while displaying the updated text."
+        },
+        {
+          "path": "frontend/src/layouts/DashboardLayout.tsx",
+          "operation": "modify",
+          "description": "Update the sidebar header app name label to 'IoT Based Smart Waste Management System'. Ensure the label fits appropriately within the sidebar design and maintains its current styling. Consider using a shorter display variant (e.g., 'SmartWaste IoT') if space constraints require it, but ensure the full name is visible in a tooltip or on hover."
+        }
+      ]
+    }
+  ]
+}

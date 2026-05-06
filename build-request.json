@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Update app title to IoT Based Smart Waste Management System",
+  "projectName": "SmartWaste IoT Dashboard",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Update the browser tab title in frontend/index.html to 'IoT Based Smart Waste Management System'. Also ensure any visible page-level headings or app name labels across the application (sidebar header, landing page hero title, login page header) consistently display 'IoT Based Smart Waste Management System'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "add title as Iot based smart waste management system"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The browser tab (document title in index.html) reads exactly 'IoT Based Smart Waste Management System'.",
+        "The landing page hero section title displays 'IoT Based Smart Waste Management System'.",
+        "Any sidebar or top-bar app name label displays 'IoT Based Smart Waste Management System'.",
+        "No other page titles or app name references contradict this value."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files listed in frontend.immutablePaths.",
+    "Do not alter any existing feature logic, routing, or data simulation when making title changes."
+  ],
+  "nonGoals": [
+    "Changing the visual design, color scheme, or layout.",
+    "Adding new pages or features.",
+    "Backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

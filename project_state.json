@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "IoT Based Smart Waste Management System — a production-ready SaaS-style smart city monitoring web app built with React.js + Vite, Tailwind CSS, React Router, and Recharts. Features landing page, mock admin login, sidebar dashboard, multi-bin monitoring with real-time simulated data, smart alert system, analytics charts, mock map view, and security section. Blue + green smart city theme with glassmorphism design, dark/light mode, and fully responsive layout.",
+  "architectural_notes": [
+    "Stack: React.js + Vite, Tailwind CSS, React Router, Recharts",
+    "Design: Glassmorphism cards, blue + green smart city theme, smooth animations, professional typography",
+    "Bin data is simulated client-side with auto-updating intervals (no real IoT backend)",
+    "Authentication is mock only — no real backend auth"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-public-landing-page-with-1-an-animated-gradient-hero-section-with-title-iot-based-smart-waste-management-system-and-tagline-smart-iot-solution-for-real-time-waste-monitoring-2-a-problem-statement-section-displaying-waste-overflow-statistics-3-a-solution-overview-section-with-a-visual-architecture-flow-diagram-showing-sensor-nodemcu-cloud-dashboard-4-an-access-dashboard-button-that-navigates-to-the-admin-login-page",
+      "title": "Create a public Landing Page with: (1) an animated gradient hero section with title 'IoT Based Smart Waste Management System' and tagline 'Smart IoT Solution for Real-Time Waste Monitoring'; (2) a Problem Statement section displaying waste overflow statistics; (3) a Solution Overview section with a visual architecture flow diagram showing Sensor → NodeMCU → Cloud → Dashboard; (4) an 'Access Dashboard' button that navigates to the Admin Login page.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-login-page-with-mock-authentication-email-and-password-input-fields-a-show-hide-password-toggle-client-side-validation-non-empty-email-format-non-empty-password-and-on-successful-validation-redirect-the-user-to-the-main-dashboard",
+      "title": "Create an Admin Login Page with mock authentication: email and password input fields, a show/hide password toggle, client-side validation (non-empty email format, non-empty password), and on successful validation redirect the user to the main Dashboard.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-persistent-sidebar-dashboard-layout-wrapping-all-authenticated-pages-sidebar-must-include-navigation-items-dashboard-bin-monitoring-analytics-alerts-map-view-reports-settings-and-logout-logout-clears-auth-state-and-redirects-to-the-login-page-sidebar-should-collapse-on-mobile-with-a-hamburger-toggle",
+      "title": "Implement a persistent sidebar dashboard layout wrapping all authenticated pages. Sidebar must include navigation items: Dashboard, Bin Monitoring, Analytics, Alerts, Map View, Reports, Settings, and Logout. Logout clears auth state and redirects to the Login page. Sidebar should collapse on mobile with a hamburger toggle.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dashboard-overview-page-showing-animated-counter-cards-for-total-smart-bins-5-active-alerts-count-from-alert-state-waste-collected-today-simulated-kg-value-system-status-online-offline-and-network-health-percentage-counters-should-animate-from-0-to-their-target-value-on-page-load",
+      "title": "Build a Dashboard Overview page showing animated counter cards for: Total Smart Bins (5), Active Alerts (count from alert state), Waste Collected Today (simulated kg value), System Status (Online/Offline), and Network Health (percentage). Counters should animate from 0 to their target value on page load.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-bin-monitoring-page-simulating-5-smart-bins-each-bin-card-must-show-a-circular-progress-indicator-displaying-waste-fill-percentage-color-coded-status-green-0-50-yellow-50-80-red-80-100-location-name-and-last-updated-timestamp-bin-fill-values-must-auto-update-via-a-simulated-interval-every-3-5-seconds-with-small-random-increments-decrements",
+      "title": "Create a Bin Monitoring page simulating 5 smart bins. Each bin card must show: a circular progress indicator displaying waste fill percentage, color-coded status (green 0–50%, yellow 50–80%, red 80–100%), location name, and last updated timestamp. Bin fill values must auto-update via a simulated interval (every 3–5 seconds) with small random increments/decrements.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-smart-alert-system-when-any-bin-s-fill-level-exceeds-80-automatically-show-a-toast-popup-notification-and-add-an-entry-to-an-alert-log-table-columns-bin-id-location-fill-level-time-status-action-each-alert-row-must-include-a-dispatch-collection-button-that-when-clicked-resets-the-bin-level-to-10-marks-the-alert-as-resolved-in-the-table-and-logs-the-collection-event",
+      "title": "Implement a Smart Alert System: when any bin's fill level exceeds 80%, automatically show a toast/popup notification and add an entry to an alert log table (columns: Bin ID, Location, Fill Level, Time, Status, Action). Each alert row must include a 'Dispatch Collection' button that, when clicked, resets the bin level to ~10%, marks the alert as resolved in the table, and logs the collection event.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-analytics-page-using-recharts-with-three-dynamically-updating-charts-1-a-line-chart-showing-waste-levels-over-time-for-all-bins-2-a-bar-chart-comparing-current-fill-levels-across-the-5-bins-3-a-pie-chart-showing-waste-distribution-by-bin-location-charts-must-reflect-the-live-simulated-bin-data-and-refresh-as-values-change",
+      "title": "Build an Analytics page using Recharts with three dynamically updating charts: (1) a Line Chart showing waste levels over time for all bins; (2) a Bar Chart comparing current fill levels across the 5 bins; (3) a Pie Chart showing waste distribution by bin location. Charts must reflect the live simulated bin data and refresh as values change.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-map-view-page-with-a-mock-google-maps-style-interface-css-grid-svg-based-city-map-background-place-5-color-coded-markers-green-yellow-red-matching-bin-fill-thresholds-at-distinct-positions-representing-bin-locations-clicking-a-marker-opens-a-detail-popup-showing-the-bin-s-name-fill-level-status-and-last-updated-time",
+      "title": "Create a Map View page with a mock Google Maps-style interface (CSS grid/SVG-based city map background). Place 5 color-coded markers (green/yellow/red matching bin fill thresholds) at distinct positions representing bin locations. Clicking a marker opens a detail popup showing the bin's name, fill level, status, and last updated time.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-security-section-accessible-from-the-sidebar-under-settings-or-as-a-dedicated-page-displaying-four-informational-cards-data-encryption-aes-256-concept-secure-api-communication-https-tls-role-based-access-control-and-cloud-data-protection-each-card-should-include-an-icon-a-title-and-a-brief-description",
+      "title": "Add a Security section (accessible from the sidebar under Settings or as a dedicated page) displaying four informational cards: Data Encryption (AES-256 concept), Secure API Communication (HTTPS/TLS), Role-Based Access Control, and Cloud Data Protection. Each card should include an icon, a title, and a brief description.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-reports-page-accessible-from-the-sidebar-displaying-a-summary-table-of-recent-collection-events-logged-by-the-dispatch-collection-action-showing-columns-date-time-bin-id-location-fill-level-at-dispatch-and-status-include-a-mock-export-csv-button",
+      "title": "Add a Reports page (accessible from the sidebar) displaying a summary table of recent collection events logged by the Dispatch Collection action, showing columns: Date/Time, Bin ID, Location, Fill Level at Dispatch, and Status. Include a mock 'Export CSV' button.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-global-dark-light-mode-toggle-accessible-from-the-sidebar-or-top-navigation-bar-the-entire-application-all-pages-cards-charts-and-sidebar-must-respond-to-the-theme-change-with-appropriate-color-schemes",
+      "title": "Implement a global Dark/Light mode toggle accessible from the sidebar or top navigation bar. The entire application (all pages, cards, charts, and sidebar) must respond to the theme change with appropriate color schemes.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-blue-green-smart-city-design-system-across-the-entire-application-glassmorphism-style-cards-frosted-glass-effect-with-subtle-borders-smooth-css-transitions-and-animations-professional-typography-clean-sans-serif-and-fully-responsive-layout-supporting-mobile-tablet-and-desktop-viewports",
+      "title": "Apply a cohesive Blue + Green smart city design system across the entire application: glassmorphism-style cards (frosted glass effect with subtle borders), smooth CSS transitions and animations, professional typography (clean sans-serif), and fully responsive layout supporting mobile, tablet, and desktop viewports.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-browser-tab-title-in-frontend-index-html-to-iot-based-smart-waste-management-system-also-ensure-any-visible-page-level-headings-or-app-name-labels-across-the-application-sidebar-header-landing-page-hero-title-login-page-header-consistently-display-iot-based-smart-waste-management-system",
+      "title": "Update the browser tab title in frontend/index.html to 'IoT Based Smart Waste Management System'. Also ensure any visible page-level headings or app name labels across the application (sidebar header, landing page hero title, login page header) consistently display 'IoT Based Smart Waste Management System'.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Landing page with animated hero, problem statement, architecture diagram, and Access Dashboard button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Admin login page with mock authentication, email/password fields, show/hide password, validation, and redirect",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Sidebar dashboard layout with navigation items: Dashboard, Bin Monitoring, Analytics, Alerts, Map View, Reports, Settings, Logout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Overview cards with animated counters for Total Smart Bins, Active Alerts, Waste Collected Today, System Status, Network Health",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Multi-bin monitoring page: 5 simulated bins with circular progress indicators, color coding, location, last updated time, auto-updating values",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Smart alert system: popup notifications when bin > 80%, alert table entries, Dispatch Collection button to reset bin and resolve alert",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Analytics page with dynamically updating line chart, bar chart, and pie chart using Recharts",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Mock map view with Google Maps-style interface, color-coded bin markers, and clickable marker bin detail popups",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Security section displaying data encryption, secure API communication, role-based access, and cloud data protection concepts",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Dark/Light mode toggle across entire application",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Store all simulated bin state, alert log, and collection log in a Motoko backend actor. Expose query and update functions so the frontend can: fetch current bin data, update bin fill levels, add alert entries, dispatch collection (reset bin + resolve alert), and retrieve collection history.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Add/update the app title to 'IoT Based Smart Waste Management System' (e.g., browser tab title, page headers)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "IoT Based Smart Waste Management System",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

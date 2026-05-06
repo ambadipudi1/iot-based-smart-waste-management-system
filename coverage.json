@@ -1,0 +1,40 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T06:17:03.925Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-14",
+        "summary": "Update the browser tab title in frontend/index.html to 'IoT Based Smart Waste Management System'. Also ensure any visible page-level headings or app name labels across the application (sidebar header, landing page hero title, login page header) consistently display 'IoT Based Smart Waste Management System'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/pages/LandingPage.tsx",
+          "frontend/src/layouts/DashboardLayout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/layouts/DashboardLayout.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/layouts/DashboardLayout.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
