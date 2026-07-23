@@ -74,9 +74,8 @@ Mongoose-Connects Node.js to MongoDB
    ## License ##
   For placement interview, also add a **Project Objective **
   ///// The main objective of this project is to use IoT technology to moniter waste bins in real-time,  reduce overflow situations,improving waste collection efficiently, and support a smart city initatiatives.
-Team memebers
-A. Rupavani  - 23N31A6617
-A. Chamanthi - 23N31A6614
-B. Likhitha  - 23N31A6636
+  Demo :
+  https://www.linkedin.com/posts/ambadipudi-rupavani-1b35aa352_iot-smartcity-wastemanagement-activity-7474315996510593024-3-qr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgCSpcBYFbs_t443iaz4YoCk6nJcPlALIo
+
 
 
